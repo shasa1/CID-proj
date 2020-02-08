@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 699.214 sec <<< FAILURE!
+verifySearchByLocationSection(com.nk.tests.SearchPageTest)  Time elapsed: 12.724 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 8
+	at java.lang.String.substring(String.java:1907)
+	at com.nk.pages.SearchResultPage.getLocationBangaloreSelected(SearchResultPage.java:1458)
+	at com.nk.tests.SearchPageTest.verifySearchByLocationSection(SearchPageTest.java:198)
+
+verifyRefineByLocationPopUp(com.nk.tests.SearchPageTest)  Time elapsed: 41.999 sec  <<< FAILURE!
+java.lang.AssertionError: Location Displayed does not match with the location selected expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.nk.pages.SearchResultPage.verifyDisplayedJobLocations(SearchResultPage.java:2030)
+	at com.nk.tests.SearchPageTest.verifyRefineByLocationPopUp(SearchPageTest.java:184)
+
+verifyRefineByIndustryPopUp(com.nk.tests.SearchPageTest)  Time elapsed: 3.748 sec  <<< FAILURE!
+java.lang.AssertionError: The PopUp Titles doesnot match expected [Industry] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.nk.pages.SearchResultPage.verifyPopUpHeaderTitle(SearchResultPage.java:811)
+	at com.nk.tests.SearchPageTest.verifyRefineByIndustryPopUp(SearchPageTest.java:117)
+
+verifyRefineByEducationPopUp(com.nk.tests.SearchPageTest)  Time elapsed: 4.251 sec  <<< FAILURE!
+java.lang.AssertionError: The PopUp Titles doesnot match expected [Education] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at com.nk.pages.SearchResultPage.verifyPopUpHeaderTitle(SearchResultPage.java:811)
+	at com.nk.tests.SearchPageTest.verifyRefineByEducationPopUp(SearchPageTest.java:143)
+

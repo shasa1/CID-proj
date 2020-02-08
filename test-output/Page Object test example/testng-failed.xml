@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object test example]">
+  <parameter name="browserType" value="FF"/>
+  <parameter name="url" value="http://www.naukri.com/"/>
+  <test name="sample test(failed)">
+    <classes>
+      <class name="com.nk.tests.SearchPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySearchByLocationSection"/>
+          <include name="verifyRefineByIndustryType"/>
+          <include name="verifyRefineByEducationPopUp"/>
+          <include name="setup"/>
+          <include name="verifySearchByExperienceField"/>
+          <include name="verifyRefineByLocationPopUp"/>
+          <include name="verifySearchResultsPage"/>
+          <include name="verifyRefineByIndustryPopUp"/>
+          <include name="verifySearchSection"/>
+          <include name="verifySearchListingViewResults"/>
+          <include name="verifySearchResultsSection"/>
+          <include name="verifyRefineByFreshness"/>
+          <include name="verifyRefineResultsSection"/>
+          <include name="verifySearchByLocationField"/>
+          <include name="verifySearchDetailedViewResults"/>
+          <include name="verifyRefineByEducation"/>
+          <include name="verifySearchBySkill"/>
+        </methods>
+      </class> <!-- com.nk.tests.SearchPageTest -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [Page Object test example] -->
