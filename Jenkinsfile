@@ -5,7 +5,7 @@ pipeline {
    
    stage('Git checkout') {
       git 'https://github.com/shasa1/CID-proj.git'
-   }
+   	}
   
   
    stage('Build') {
@@ -33,5 +33,5 @@ pipeline {
   stage('Results') {
       junit '**/test-output/index.html'
    }
-  }
+  
 }
